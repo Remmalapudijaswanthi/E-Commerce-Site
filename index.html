@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><h1>E-Commerce store</h1></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#wishlist">Wishlist</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><button id="darkToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <h1>Discover Quality & Style</h1>
+      <p>Explore the best deals on tech, fashion, and more.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+    <input type="text" id="searchBox" placeholder="Search products...">
+    <div class="product-list"></div>
+  </section>
+
+  <section id="about">
+  <h2>About MyShop</h2>
+  <p style="text-align: center; max-width: 700px; margin: auto;">
+    MyShop is built with love and innovation, offering tech, fashion, and lifestyle products that blend affordability with quality. Our mission is to simplify online shopping and bring confidence to every purchase. Whether you're upgrading your gadgets or refreshing your style—we're here to make it seamless.
+  </p>
+</section>
+
+  <section id="wishlist">
+    <h2>My Wishlist</h2>
+    <div class="wishlist-items"><p>No items yet.</p></div>
+  </section>
+
+  <section id="cart">
+    <h2>My Cart</h2>
+    <div class="cart-items"><p>No items in cart.</p></div>
+  </section>
+
+  <button id="backToTop" title="Back to Top">↑</button>
+
+  <section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm" style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px;">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 E-Commerce store. All rights reserved. | <a href="#">Privacy Policy</a></p>
+  </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
